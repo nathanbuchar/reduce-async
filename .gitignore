@@ -1,0 +1,8 @@
+.DS_Store
+.atomignore
+.env
+
+*~
+*.log
+
+node_modules
