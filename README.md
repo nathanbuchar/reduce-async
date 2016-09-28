@@ -1,4 +1,4 @@
-ReduceAsync [![Build Status](https://travis-ci.org/nathanbuchar/reduce-async.svg?branch=master)](https://travis-ci.org/nathanbuchar/reduce-async) [![Dependencies](https://david-dm.org/nathanbuchar/reduce-async.svg)](https://david-dm.org/nathanbuchar/reduce-async)
+ReduceAsync [![Build Status](https://travis-ci.org/nathanbuchar/reduce-async.svg?branch=master)](https://travis-ci.org/nathanbuchar/reduce-async)
 ===========
 
 Asynchronous `Array.reduce`. The [`reduce()`][external_mdn_reduce] method applies a function against an accumulator and each value of the array (from left-to-right) to reduce it to a single value.
