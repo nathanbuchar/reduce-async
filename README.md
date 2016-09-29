@@ -19,7 +19,7 @@ $ npm install reduce-async
 ### Syntax
 
 ```
-arrayReduce(array, iteratee, done[, initialValue])
+reduceAsync(array, iteratee, done[, initialValue])
 ```
 
 **Parameters**
