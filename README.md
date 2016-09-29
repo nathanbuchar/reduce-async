@@ -27,7 +27,7 @@ reduceAsync(array, iteratee, done[, initialValue])
 * **`array`** *Array* - The array to reduce.
 
 * **`iteratee`** *Function* - The function to execute on each value in the array, taking five arguments:
-  * `prev` *Any* - The value previously returned in the last invocation of the iteratee, or `initialValue` if supplied. (See below.)
+  * `prev` *Any* - The value previously returned in the last invocation of the iteratee, or `initialValue` if supplied.
 
   * `curr` *Any* - The current element being processed in the array.
 
@@ -37,7 +37,8 @@ reduceAsync(array, iteratee, done[, initialValue])
 
   * `next` *Function* - The function to call when you are ready to advance to the next element in the array.
 
-* **`done`** *Function* - The function called when the reduce has finished.
+* **`done`** *Function* - The function called when the reduce has finished, taking one argument:
+  * `result` *Any* - The value that results from the reduction.
 
 * **`initialValue`** *Any* (Optional) - Value to use as the first argument to the first call of the `iteratee`.
 
@@ -102,6 +103,6 @@ License
 
 
 
-[external_mdn_reduce]: (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+[external_mdn_reduce]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 
 [Nathan Buchar]: mailto:hello@nathanbuchar.com
