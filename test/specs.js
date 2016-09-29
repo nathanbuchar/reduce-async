@@ -13,25 +13,25 @@ describe('reduceAsync', () => {
 
   describe('interface', () => {
 
-    it('should throw if first parameter is not an array', () => {
+    it('should throw if the first parameter is not an array', () => {
       expect(() => {
         reduceAsync(false);
       }).to.throw(TypeError, /must be called on an array/);
     });
 
-    it('should throw if second parameter is not a function', () => {
+    it('should throw if the second parameter is not a function', () => {
       expect(() => {
         reduceAsync([], false);
       }).to.throw(TypeError, /must be a function/);
     });
 
-    it('should throw if third parameter is not a function', () => {
+    it('should throw if the third parameter is not a function', () => {
       expect(() => {
         reduceAsync([], () => {}, false);
       }).to.throw(TypeError, /must be a function/);
     });
 
-    it('should throw if first parameter is an empty array and no initial value is specified', () => {
+    it('should throw if the first parameter is an empty array and no initial value is specified', () => {
       expect(() => {
         reduceAsync([], () => {}, () => {});
       }).to.throw(TypeError, /empty array with no initial value/);
@@ -40,7 +40,7 @@ describe('reduceAsync', () => {
 
   describe('iterator', () => {
 
-    it('should immediately return the first value in the array if called without an initial value and with an array of length 1', done => {
+    it('should immediately return the first value in the array if the array has a length of 1 and the accumulator is called without an initial value', done => {
       const _arr = ['foo'];
 
       reduceAsync(_arr, (prev, curr, n, arr, next) => {
@@ -110,7 +110,7 @@ describe('reduceAsync', () => {
         }, _initialValue);
       });
 
-      it('should equal the value passed into the "next" function of the previous step', done => {
+      it('should be equal to the value passed into the "next" function of the previous step', done => {
         const _arr = ['foo', 'baz', 'baz'];
         let _step = 0;
 
@@ -192,7 +192,7 @@ describe('reduceAsync', () => {
 
     describe('arr', () => {
 
-      it('should equal the initial array', done => {
+      it('should be equal to the given array', done => {
         const _arr = ['foo', 'bar', 'baz'];
 
         reduceAsync(_arr, (prev, curr, n, arr, next) => {
@@ -203,7 +203,7 @@ describe('reduceAsync', () => {
         });
       });
 
-      it('should equal the initial array without the initial value when specified', done => {
+      it('should be equal to the given array without the initial value when specified', done => {
         const _arr = ['bar', 'baz'];
         const _initialValue = 'foo';
 
