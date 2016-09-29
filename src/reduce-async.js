@@ -97,8 +97,12 @@ module.exports = function reduceAsync(arr, iteratee, done /*, initialValue*/) {
    * @private
    */
   function _iterator(n) {
-    if (n in _arr) {
-      iteratee(_value, _arr[n], n, _arr, _next(n));
+    if (n < _len) {
+      if (n in _arr) {
+        iteratee(_value, _arr[n], n, _arr, _next(n));
+      } else {
+        _iterator(++n);
+      }
     } else {
       done(_value);
     }
