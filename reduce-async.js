@@ -40,15 +40,6 @@ module.exports = function reduceAsync(arr, iteratee, done /*, initialValue*/) {
   var _args = arguments;
 
   /**
-   * The starting index.
-   *
-   * @type {number}
-   * @default 0
-   * @private
-   */
-  var _index = 0;
-
-  /**
    * The array to reduce.
    *
    * @type {Array}
@@ -64,6 +55,15 @@ module.exports = function reduceAsync(arr, iteratee, done /*, initialValue*/) {
    * @private
    */
   var _len = _arr.length >>> 0;
+
+  /**
+   * The starting index.
+   *
+   * @type {number}
+   * @default 0
+   * @private
+   */
+  var _index = 0;
 
   /**
    * The current value of the reduction.
