@@ -75,7 +75,7 @@ arrayReduce(array, iteratee, done[, initialValue])
   ```js
   reduceAsync(['bar', 'baz']], (prev, curr, n, arr, next) => {
     doSomethingAsync(() => {
-      next(prev+curr);
+      next(prev + curr);
     });
   }, result => {
     // result is "foobarbaz"

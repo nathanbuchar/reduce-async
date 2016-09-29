@@ -1,6 +1,6 @@
 {
   "name": "reduce-async",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Asynchronous Array.reduce",
   "main": "reduce-async.js",
   "directories": {
