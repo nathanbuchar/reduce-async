@@ -95,7 +95,7 @@ Authors
 
 License
 -------
-IST
+[ISC](./LICENSE)
 
 
 
